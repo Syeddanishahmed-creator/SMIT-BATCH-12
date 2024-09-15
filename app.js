@@ -64,38 +64,60 @@
 // challenge 35
 
 
-const person1 = {
-    name : 'danish',
-    age : 32,
-    status : 'tourist',
+// const person1 = {
+//     name : 'danish',
+//     age : 32,
+//     status : 'tourist',
+// }
+
+// const person2 = {
+//     name : 'salman',
+//     age : 40,
+//     status : 'resident',
+// }
+
+
+
+// if (person1.age > 18 && person1.status == "resident"){
+//     console.log(`${person1.name} you are eligable`)}
+// else{
+//     console.log('You are not allowed')
+
+// }
+
+
+
+
+// if (person2.age > 18 && person2.status == "resident"){
+//     console.log(`${person2.name} you are eligable`)}
+// else{
+//     console.log('You are not allowed')
+
+// }
+
+
+
+// FOR LOOPS
+
+const menu = ['tikka', 'daal chawal', 'nihari', 'bbq', 'sabzi'];
+
+let userWish = prompt('Sir ap kia khana pasand karenge?');
+var itemMila = false
+
+for (i = 0; i < menu.length; i++) {
+    if (userWish === menu[i]) {
+        console.log(
+            'user ko ' + menu[i] + ' provide kardeni hai, jo k counter number ' + i + ' se mil jyegi');
+            itemMila = true
+        break;
+    } 
+    
 }
 
-const person2 = {
-    name : 'salman',
-    age : 40,
-    status : 'resident',
-}
-
-
-
-if (person1.age > 18 && person1.status == "resident"){
-    console.log(`${person1.name} you are eligable`)}
-else{
-    console.log('You are not allowed')
+if (itemMila){
+    console.log('ustad dish deliver kardi hai');
+} else {
+    console.log(userWish + " nahi hai");
 
 }
-
-
-
-
-if (person2.age > 18 && person2.status == "resident"){
-    console.log(`${person2.name} you are eligable`)}
-else{
-    console.log('You are not allowed')
-
-}
-
-
-
-
 
